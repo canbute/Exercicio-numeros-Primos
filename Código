@@ -1,0 +1,30 @@
+package exercicio1;
+
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Lucas
+ */
+public class Exercicio1 {
+    public static void main(String[] args) {
+        int numDivi = 0,numPrimos ;
+        
+        numPrimos = Integer.parseInt(JOptionPane.showInputDialog("Digite um número"));
+        
+        for(int i =1; i <= numPrimos;i++){
+            if(numPrimos % i == 0){
+                numDivi++;
+
+            }//if
+        }//for
+        if(numDivi == 2 ){
+            JOptionPane.showMessageDialog(null,"É PRIMO");
+        }else{
+            JOptionPane.showMessageDialog(null,"NÃO É PRIMO");
+            
+        }//else
+    }// psvm
+
+}
